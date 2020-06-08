@@ -45,7 +45,7 @@ public class Platform : MonoBehaviour
         yield return new WaitForSeconds(platformFallWait);
         rb.constraints = RigidbodyConstraints2D.None;
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-        // rb.gravityScale = 1f;
+        rb.gravityScale = 1f;
         _shake = false;
         _fallen = true;
     }

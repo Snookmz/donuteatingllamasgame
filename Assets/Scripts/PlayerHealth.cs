@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -71,18 +68,6 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }   
-    //
-    // private void OnCollisionStay2D(Collision2D other)
-    // {
-    //     // Debug.Log("PlayerHealth, OnCollisionStay2D, tag: " + other.gameObject.tag);
-    //     if (!_playerIsHurtingTakeNoDamage)
-    //     {
-    //         if (other.gameObject.CompareTag("EnemyEagle") || other.gameObject.CompareTag("EnemyOrc") || other.gameObject.CompareTag("Robot"))
-    //         {
-    //             TakeDamage();
-    //         } 
-    //     }      
-    // }
 
     private void TakeDamage()
     {

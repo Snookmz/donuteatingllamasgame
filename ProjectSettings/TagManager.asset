@@ -19,6 +19,7 @@ TagManager:
   - ObstaclePit
   - ObstacleSpike
   - PlayerLegs
+  - End
   layers:
   - Default
   - TransparentFX
@@ -64,6 +65,9 @@ TagManager:
     locked: 0
   - name: Tilemap
     uniqueID: 682052601
+    locked: 0
+  - name: End
+    uniqueID: 2939112701
     locked: 0
   - name: Player
     uniqueID: 601027927

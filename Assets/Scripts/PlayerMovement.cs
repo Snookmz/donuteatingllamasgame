@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -97,15 +98,12 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
         }
     }
-    
-    // private void OnCollisionExit2D(Collision2D other)
-    // {
-    //     Debug.Log("PM, OnCollisionExit2D, other: " + other.gameObject.tag);
-    //     Debug.Log("PM, OnCollisionExit2D, other.collider: " + other.otherCollider.tag);
-    //     if (other.collider.CompareTag("Tilemap") && other.otherCollider.CompareTag("PlayerLegs"))
-    //     {
-    //         isGrounded = false;
-    //     }
-    // }
-    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("End"))
+        {
+            UiFinished.ShowFinishedText();
+        }
+    }
 }
