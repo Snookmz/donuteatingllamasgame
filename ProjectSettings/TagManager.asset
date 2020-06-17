@@ -20,6 +20,7 @@ TagManager:
   - ObstacleSpike
   - PlayerLegs
   - End
+  - EnemyBug
   layers:
   - Default
   - TransparentFX

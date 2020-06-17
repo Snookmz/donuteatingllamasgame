@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("End"))
         {
-            UiFinished.ShowFinishedText();
+            Finished.ShowFinishedText();
         }
     }
 }
